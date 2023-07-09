@@ -1,37 +1,35 @@
-
-
+<div style="display: flex; justify-content: center;">
+  <%= image_tag "01.png", alt: "", size: "300x200" %>
+</div>
 <div id="wraper">
-    <section id="main" class="wrapper">
-      <div class="container text-center">
-        <div class inner>
-              <div class= "table-container">
-                <table class="table table-striped">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th>Nombre</th> <br>
-                      <th>Ciudad</th><br>
-                      <th>Casa</th><br>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <% @characters.each do |character| %>
-                      <tr>
-                        <td><%= character.name %></td>
-                        <td><%= character.location %></td>
-                        <td><%= character.house %></td>
-                      </tr>
-                    <% end %>
-                  </tbody>
-                </table>
-              </div>
-              
-              <%= image_tag "04.png", alt: "   " %>
-              
-             
-
-
-            </div>
+  <section id="main" class="wrapper">
+    <div class="container">
+      <div class inner>
+        <div class="table-container">
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Nombre</th> <br>
+                <th>Ubicación</th><br>
+                <th>Casa</th><br>
+              </tr>
+            </thead>
+            <tbody>
+              <% @characters.each do |character| %>
+              <tr>
+                <td><%= character.name %></td>
+                <td><%= character.location %></td>
+                <td><%= character.house %></td>
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <%= image_tag "04.png", alt: "", size: "300x200" %>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+</div>
+</section>
+</div>
