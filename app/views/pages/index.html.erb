@@ -1,0 +1,37 @@
+
+
+<div id="wraper">
+    <section id="main" class="wrapper">
+      <div class="container text-center">
+        <div class inner>
+              <div class= "table-container">
+                <table class="table table-striped">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th>Nombre</th> <br>
+                      <th>Ciudad</th><br>
+                      <th>Casa</th><br>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% @characters.each do |character| %>
+                      <tr>
+                        <td><%= character.name %></td>
+                        <td><%= character.location %></td>
+                        <td><%= character.house %></td>
+                      </tr>
+                    <% end %>
+                  </tbody>
+                </table>
+              </div>
+              
+              <%= image_tag "04.png", alt: "   " %>
+              
+             
+
+
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
